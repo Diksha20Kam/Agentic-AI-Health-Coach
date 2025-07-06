@@ -11,12 +11,14 @@ A proactive AI agent system to guide users in achieving their health goals using
 
 ## 🛠️ Tech Stack
 - Python, Hugging Face Transformers (LLaMA 2)
-- LangChain (optional), Streamlit/CLI
+- LangChain, Streamlit/CLI
 
 ## 📦 How to Run
 ```bash
+conda create -n agentic_ai python=3.10 -y
+conda activate agentic_ai
 pip install -r requirements.txt
-python app.py
+streamlit run app.py
 ```
 
 ## 📁 Project Structure
@@ -36,7 +38,3 @@ agentic-health-coach/
 └── README.md
 ```
 
-## ✅ Future Enhancements
-- Integrate Fitbit API for real-time tracking
-- Add LangGraph for complex agent flows
-- Build frontend with Streamlit or React
