@@ -1,7 +1,7 @@
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 
 def get_goals(user_input):
-    model_id = "meta-llama/Llama-2-7b-chat-hf"
+    model_id = "tiiuae/falcon-7b-instruct"
     tokenizer = AutoTokenizer.from_pretrained(model_id)
     model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto")
 
